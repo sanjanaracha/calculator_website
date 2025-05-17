@@ -1,0 +1,85 @@
+.main-container {
+    padding: 20px;
+    max-width: 400px;
+    margin: 50px auto;
+    background-color:rgb(2, 2, 55);
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-container textarea{
+    width:100%;
+}
+button:focus{
+    color:gray;
+}
+
+.output {
+    width: 100%;
+    height: 6rem;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    margin-top: 2%;
+    text-shadow: 2px;
+
+}
+
+button {
+    flex: 1 1 21%; /* roughly 4 buttons per row with some gap */
+    min-width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    margin: 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+input{
+    width: 320px;
+    /* border: 1px;
+    padding: 24px;
+    margin: 10px; */
+    /* background: transparent; */
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    /* cursor: pointer; */
+    color: black;
+}
+
+
+@media (max-width: 480px) {
+    .main-container {
+        margin: 20px 10px;
+        max-width: 100%;
+    }
+    button {
+        flex: 1 1 40%; /* 2 buttons per row on small screens */
+        min-width: 0;
+        height: 50px;
+        font-size: 1rem;
+    }
+    .output {
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+}
+
+/* .result{
+    background-color: crimson;
+} */
+
